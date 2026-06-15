@@ -3,7 +3,6 @@ import {
   Bell,
   GitBranch,
   KanbanSquare,
-  LockIcon,
   MessageCircle,
   ScrollText,
   ShieldCheck,

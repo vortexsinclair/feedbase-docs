@@ -100,7 +100,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                 style={{ backgroundColor: "#0d0d0d", padding: "24px 32px" }}
               >
                 <Link href="https://feedbase.breaddevv.cc">
-                  <table cellPadding="0" cellSpacing="0">
+                  <table role="presentation" cellPadding="0" cellSpacing="0">
                     <tbody>
                       <tr>
                         <td
@@ -149,7 +149,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                     marginBottom: "20px",
                   }}
                 >
-                  <table cellPadding="0" cellSpacing="0">
+                  <table role="presentation" cellPadding="0" cellSpacing="0">
                     <tbody>
                       <tr>
                         <td
@@ -288,7 +288,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                     marginBottom: "20px",
                   }}
                 >
-                  <table width="100%" cellPadding="0" cellSpacing="0">
+                  <table role="presentation" width="100%" cellPadding="0" cellSpacing="0">
                     <tbody>
                       <tr>
                         <td style={{ verticalAlign: "middle" }}>
@@ -363,7 +363,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                   >
                     Also includes
                   </div>
-                  <table cellPadding="0" cellSpacing="0">
+                  <table role="presentation" cellPadding="0" cellSpacing="0">
                     <tbody>
                       <tr>
                         {[

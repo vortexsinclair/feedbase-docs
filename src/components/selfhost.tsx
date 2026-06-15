@@ -1,5 +1,4 @@
-import { Check, Copy, Database, Lock, Server } from "lucide-react"
-import { ArrowRight } from "lucide-react"
+import { Check, Copy, Database, Lock, Server, ArrowRight } from "lucide-react"
 
 const points = [
   {

@@ -1,8 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --font-heading: var(--font-inter);
   --font-sans: var(--font-inter), sans-serif;
@@ -47,6 +45,7 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* ── Dark mode (default) ── */
 :root {
   color-scheme: dark;
   --background: oklch(0.155 0.006 310);
@@ -81,6 +80,41 @@
   --sidebar-accent-foreground: oklch(0.97 0.004 310);
   --sidebar-border: oklch(1 0 0 / 9%);
   --sidebar-ring: oklch(0.66 0.247 358);
+}
+
+.light {
+  color-scheme: light;
+  --background: oklch(0.99 0.002 310);
+  --foreground: oklch(0.15 0.006 310);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.006 310);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.006 310);
+  --primary: oklch(0.60 0.247 358);
+  --primary-foreground: oklch(0.99 0.004 358);
+  --secondary: oklch(0.95 0.004 310);
+  --secondary-foreground: oklch(0.2 0.006 310);
+  --muted: oklch(0.95 0.004 310);
+  --muted-foreground: oklch(0.48 0.01 310);
+  --accent: oklch(0.94 0.02 358);
+  --accent-foreground: oklch(0.2 0.006 310);
+  --destructive: oklch(0.55 0.22 25);
+  --border: oklch(0 0 0 / 10%);
+  --input: oklch(0 0 0 / 8%);
+  --ring: oklch(0.60 0.247 358);
+  --chart-1: oklch(0.60 0.247 358);
+  --chart-2: oklch(0.65 0.18 350);
+  --chart-3: oklch(0.48 0.2 5);
+  --chart-4: oklch(0.70 0.13 345);
+  --chart-5: oklch(0.40 0.16 358);
+  --sidebar: oklch(0.97 0.003 310);
+  --sidebar-foreground: oklch(0.15 0.006 310);
+  --sidebar-primary: oklch(0.60 0.247 358);
+  --sidebar-primary-foreground: oklch(0.99 0.004 358);
+  --sidebar-accent: oklch(0.93 0.004 310);
+  --sidebar-accent-foreground: oklch(0.2 0.006 310);
+  --sidebar-border: oklch(0 0 0 / 8%);
+  --sidebar-ring: oklch(0.60 0.247 358);
 }
 
 @layer base {

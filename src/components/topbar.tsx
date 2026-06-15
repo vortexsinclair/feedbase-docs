@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, Moon, Sun } from "lucide-react";
 import Image from "next/image";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaDiscord } from "react-icons/fa6";
@@ -28,13 +28,7 @@ export function SiteHeader() {
       >
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <a href="/" aria-label="Feedbase home" className="shrink-0">
-            <Image
-              src={fb}
-              alt="FB"
-              width={2}
-              height={2}
-              className="w-12 h-9"
-            />
+            <Image src={fb} alt="FB" width={2} height={2} className="w-12 h-9" />
           </a>
 
           <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
@@ -77,15 +71,17 @@ export function SiteHeader() {
             </a>
           </div>
 
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            className="flex size-9 items-center justify-center rounded-md border border-border text-foreground md:hidden"
-            aria-label="Toggle menu"
-            aria-expanded={open}
-          >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              className="flex size-9 items-center justify-center rounded-md border border-border text-foreground"
+              aria-label="Toggle menu"
+              aria-expanded={open}
+            >
+              {open ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
+          </div>
         </div>
 
         <AnimatePresence>
@@ -143,7 +139,6 @@ export function SiteHeader() {
         </AnimatePresence>
       </motion.header>
 
-      {/* Spacer to push page content below fixed header */}
       <div className="h-16" />
     </>
   );

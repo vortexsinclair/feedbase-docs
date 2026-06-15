@@ -10,7 +10,7 @@ interface WaitlistModalProps {
   onClose: () => void;
 }
 
-export function WaitlistModal({ open, onClose }: WaitlistModalProps) {
+export function WaitlistModal({ open, onClose }: Readonly<WaitlistModalProps>) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);

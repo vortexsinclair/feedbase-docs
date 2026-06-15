@@ -1,11 +1,11 @@
-import { ArrowRight, MailIcon } from "lucide-react"
+import { MailIcon } from "lucide-react"
 import { TbBrandGithubFilled } from "react-icons/tb";
 
-interface props {
+interface CtaProps {
   waitlistmodal: () => void
 }
 
-export function Cta({waitlistmodal}: props) {
+export function Cta({waitlistmodal}: Readonly<CtaProps>) {
   return (
     <section className="mx-auto max-w-6xl px-4 pb-24 sm:px-6">
       <div className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-16 text-center sm:px-12">

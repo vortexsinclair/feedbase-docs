@@ -317,7 +317,7 @@ const blockStyles = {
   },
 };
 
-function RenderBlock({ block }: { block: Block }) {
+function RenderBlock({ block }: Readonly<{ block: Block }>) {
   if (block.type === "text") {
     return (
       <p className="text-sm text-muted-foreground leading-relaxed">
@@ -329,9 +329,9 @@ function RenderBlock({ block }: { block: Block }) {
   if (block.type === "list") {
     return (
       <ul className="flex flex-col gap-2">
-        {block.items.map((item, i) => (
+        {block.items.map((item) => (
           <li
-            key={i}
+            key={item}
             className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed"
           >
             <span className="mt-2 w-1 h-1 rounded-full bg-muted-foreground/40 shrink-0" />
@@ -479,8 +479,8 @@ export default function TermsPage() {
                 )}
               </div>
               <div className="space-y-3">
-                {section.blocks.map((block, j) => (
-                  <RenderBlock key={j} block={block} />
+                {section.blocks.map((block) => (
+                  <RenderBlock key={`${section.title}-${block.type}`} block={block} />
                 ))}
               </div>
             </motion.div>

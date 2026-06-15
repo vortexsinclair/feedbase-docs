@@ -14,9 +14,9 @@ export default function Page() {
   const [waitlistopen, setWaitlistOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
       <main>
-        <WaitlistModal open={waitlistopen} onClose={() => setWaitlistOpen(!waitlistopen)}  />
+        <WaitlistModal open={waitlistopen} onClose={() => setWaitlistOpen(true)}  />
         <Hero waitlistmodal={() => setWaitlistOpen(true)} />
         <Stats />
         <Features />
