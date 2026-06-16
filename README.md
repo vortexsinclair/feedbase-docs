@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img src="public/banner.png" alt="Alt Text" width="1200"/><br>
+# 🚀 Welcome to Feedbase Docs
 
-## Getting Started
+**Feedbase** is an open-source feedback platform designed specifically for product teams who want to listen, learn, and grow alongside their users.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 About this Repository
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This repository contains the source code for the **Feedbase Landing Page** and our **official documentation**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> **Note:** We are currently a work in progress! 🚧 We are actively building out our guides and refining our look, so please excuse the dust as we grow.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+We love keeping things clean, fast, and accessible. Our docs are powered by:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Framework:** Next.js (App Router)
+* **Styling:** Tailwind CSS
+* **Typography:** Inter, Plus Jakarta Sans, Outfit 
+* **Deployment:** Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🗺 Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We are building out the following sections to help your team succeed:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* [ ] **Getting Started:** Quick installation guide.
+* [ ] **API Reference:** Integrating Feedbase into your product.
+* [ ] **Best Practices:** How to manage and categorize user feedback effectively.
+* [ ] **Customization:** Making Feedbase look like *your* brand.
+
+---
+
+## 🤝 Contributing
+
+We love community contributions! Whether you’re fixing a typo, improving a guide, or suggesting a new feature, your help makes Feedbase better for everyone.
+
+1. **Fork the repo.**
+2. **Create a branch:** `git checkout -b feature/cool-new-doc`
+3. **Make your changes.**
+4. **Push to the branch:** `git push origin feature/cool-new-doc`
+5. **Open a Pull Request!**
+
+---
+
+## ☕ Built in Portugal with ❤️ — Feedbase Team 🇵🇹
+
+*Found a bug or want to suggest a feature?* Please [open an issue](https://www.google.com/search?q=https://github.com/breadddevv/feedbase/issues) and let us know!
+
+---
+
+*Made with love for the product community.*
