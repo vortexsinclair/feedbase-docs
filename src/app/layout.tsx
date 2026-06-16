@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     default: "Feedbase",
     template: "%s | Feedbase"
   },
+  icons: [{ rel: 'icon', url: '/fb.png' }],
   description: "Listen, learn, and grow with your users. The open-source feedback platform built for modern product teams.",
   openGraph: {
     title: 'Feedbase',
